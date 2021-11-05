@@ -1,0 +1,8 @@
+const headerNavItems = [
+    "Discover","My Music","Friends","Mall"
+]
+
+export default headerNavItems
+
+
+

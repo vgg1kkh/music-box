@@ -1,0 +1,1 @@
+export const BASE_URL = "https://music-api-vgg1kkh.vercel.app/"
