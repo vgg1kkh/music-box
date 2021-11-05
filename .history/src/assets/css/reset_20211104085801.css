@@ -35,6 +35,9 @@ li {
   list-style: none;
 }
 
+a {
+  color: #666;
+}
 
 a:hover {
   color: #666;
