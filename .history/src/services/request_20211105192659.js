@@ -1,0 +1,40 @@
+import axios from "axios";
+import NProgress from "nprogress";
+import { BASE_URL, TIMEOUT } from "./config";
+
+const instance = axios.create({
+  baseURL: BASE_URL,
+  timeout: TIMEOUT,
+});
+
+instance.interceptors.request.use(
+  (config) => {
+    NProgress.start();
+    return instance;
+  },
+  (err) => {}
+);
+export default instance;
+
+instance.interceptors.response.use(
+  (res) => {
+    NProgress.done();
+    return res.data;
+  },
+  (err) => {
+    if (err && err.response) {
+      switch (err.response.status) {
+        case 400:
+          console.log("Error 400 Request Error.");
+          break;
+        case 401:
+          console.log("Error 401 Unauthorized.");
+          break;
+        default:
+          console.log("Other Errors.");
+      }
+    }
+    return err;
+  }
+);
+

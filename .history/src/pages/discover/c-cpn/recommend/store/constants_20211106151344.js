@@ -1,0 +1,1 @@
+export const CHANGE_BANNER = 'CHANGE_TOP_BANNER'
