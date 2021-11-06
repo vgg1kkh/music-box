@@ -1,0 +1,34 @@
+import { memo } from "react";
+import { footerImages, footerLinks } from "../../common/local-data";
+
+import AppFooterWrapper from "./style";
+
+export default memo(function index() {
+
+  const mapFooterImageFromBGImage=()=>{
+
+  }
+  return (
+    <AppFooterWrapper>
+      <div className="content w980">
+        <div className="left">
+            <ul className="left-items">
+            {footerLinks.map((item) => (
+            <li key={item.title} className="left-item">
+              <a href={item.link} >{item.title}</a>
+              <span className="divider">|</span>
+            </li>
+          ))}
+            </ul>
+         
+          <p>Address</p>
+          <p>Telephone number</p>
+          <p>Email Address</p>
+        </div>
+        <ul className="right">
+          {}
+        </ul>
+      </div>
+    </AppFooterWrapper>
+  );
+});
