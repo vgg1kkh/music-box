@@ -1,0 +1,23 @@
+import { Map } from "immutable"
+import { CHANGE_BANNER, C } from "./constants"
+
+
+const initialState = Map({
+banners: [],
+hotRecommends:[]
+})
+
+
+const reducer = (state=initialState,action)=>{
+    switch(action.type){
+        case CHANGE_BANNER:
+           return (
+        //        {...state,banners:action.payload}
+            state.set("banners",action.payload)
+           )
+        default:return state
+    }
+}
+
+
+export default reducer
