@@ -1,0 +1,20 @@
+import { memo } from 'react'
+
+import { getImageSize } from '../../utils/formatUtils'
+import { TopListWrapper } from './style'
+
+export default memo(function TopList(props) {
+    const {info} = props
+    return (
+        <TopListWrapper bgUrl={getImageSize(info.coverImgUrl,80,80)}>
+            <div className='header'>
+                <div className='image-wrapper'></div>
+                <div className='titles'>
+                    <a></a>
+                </div>
+            </div>
+            <div className='body'>Content</div>
+            <div className='footer'>Footer</div>
+        </TopListWrapper>
+    )
+})

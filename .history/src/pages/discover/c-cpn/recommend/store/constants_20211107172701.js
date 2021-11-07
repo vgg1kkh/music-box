@@ -1,0 +1,3 @@
+export const CHANGE_BANNER = 'CHANGE_BANNER'
+export const CHANGE_HOTRECOMMEND = 'CHANGE_HOTRECOMMEND'
+export const 
