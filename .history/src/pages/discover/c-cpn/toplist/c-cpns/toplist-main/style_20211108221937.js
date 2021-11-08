@@ -55,8 +55,8 @@ padding: 10px 40px;
             align-items: center;
             justify-content: center;
             a{
-                padding: 6px;
-                margin: 0 6px;
+                padding: 8px;
+                margin: 0 8px;
                 border-radius: 5px;
                 border: 1px solid #2b2eff;
                 color: #2b2eff;
