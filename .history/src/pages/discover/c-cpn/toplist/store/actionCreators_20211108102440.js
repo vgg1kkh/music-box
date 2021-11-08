@@ -1,0 +1,3 @@
+const getTopListInfoAction = () => {
+    return dispatch =
+}

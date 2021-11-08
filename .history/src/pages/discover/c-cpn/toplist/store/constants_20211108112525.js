@@ -1,0 +1,2 @@
+export const CHANGE_TOPLIST_COUNT = 'CHANGE_TOPLIST_COUNT'
+hangeCurrentIndexAction
