@@ -79,7 +79,7 @@ export default memo(function ToplistMain() {
           <div className="pagination">
             <ReactPaginate
               previousLabel={"Previous"}
-              pageRangeDisplayed ={ 10 }
+              pageRangeDisplayed =
               nextLabel={"Next"}
               pageCount={pageCount}
               onPageChange={pageChange}
