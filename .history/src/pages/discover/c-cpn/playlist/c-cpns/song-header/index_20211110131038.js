@@ -1,5 +1,5 @@
 import React, { memo,useState } from "react";
-import { useSelector,shallowEqual } from "react-redux";
+import { useSelector,useDispatch,shallowEqual } from "react-redux";
 import {IoIosArrowDown} from "react-icons/io"
 import SongsCategory from "../songs-category";
 import { HeaderWrapper,HeaderLeft,HeaderRight } from "./style";

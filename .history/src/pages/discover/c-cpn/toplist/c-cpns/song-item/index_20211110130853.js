@@ -9,7 +9,7 @@ import { getImageSize } from '../../../../../../utils/formatUtils'
 
 import { SongItemWrapper } from './style'
 import { PlayCircleOutlined } from '@ant-design/icons'
-// import { message } from 'antd'
+import { message } from 'antd'
 
 
 function SongItem(props) {
@@ -19,7 +19,7 @@ function SongItem(props) {
     coverPic,
     duration,
     singer,
-    // songId,
+    songId,
     songName,
     className = '',
   } = props

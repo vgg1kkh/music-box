@@ -19,7 +19,7 @@ function SongItem(props) {
     coverPic,
     duration,
     singer,
-    // songId,
+    songId,
     songName,
     className = '',
   } = props
